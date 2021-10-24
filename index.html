@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Mister Blogger</title>
+  </head>
+  <body class="flex align-items flex-direction-col">
+    <div class="darker-screen" onclick="CloseAllWindows()"></div>
+    <header class="main-header flex">
+      <div class="header-content flex justify-space-between align-items">
+        <h2 class="icon light">Blogin<span class="green">.</span></h2>
+        <button class="btn-menu" onclick="toggleMenu()">☰</button>
+        <ul class="header-nav flex">
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main-body main-layout">
+      <div class="main-content">
+        <div class="card flex">
+          <img src="/img/img1.jpeg" alt="" />
+          <div class="card-content">
+            <h3 class="card-title">Duis aute irure dolor in henderit in voluptate.</h3>
+            <p class="card-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+              doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <a href="#" class="card-btn" onclick="toggleModal(event)"
+              >Continue Reading<span class="btn-icon">→</span></a
+            >
+          </div>
+        </div>
+        <div class="card flex">
+          <img src="/img/img2.jpeg" alt="" />
+          <div class="card-content">
+            <h3 class="card-title">Duis aute irure dolor in henderit in voluptate.</h3>
+            <p class="card-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+              doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <a href="#" class="card-btn" onclick="toggleModal(event)"
+              >Continue Reading<span class="btn-icon">→</span></a
+            >
+          </div>
+        </div>
+        <div class="card flex">
+          <img src="/img/img3.jpeg" alt="" />
+          <div class="card-content">
+            <h3 class="card-title">Duis aute irure dolor in henderit in voluptate.</h3>
+            <p class="card-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+              doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+            </p>
+            <a href="#" class="card-btn" onclick="toggleModal(event)"
+              >Continue Reading<span class="btn-icon">→</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="page-nav flex justify-space-between">
+        <a href="#">← Previos</a>
+        <a href="#">Next →</a>
+      </div>
+    </main>
+    <footer class="main-footer flex flex-direction-col align-items">
+      <h2 class="icon dark">Blogin<span class="green">.</span></h2>
+      <p class="footer-copyright">
+        © 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+        <span class="copyright-link"> Pixelhint.com</span>
+      </p>
+      <ul class="footer-links flex">
+        <li>
+          <a href="#"><img src="/img/icons/icon1.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icons/icon2.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icons/icon3.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/icons/icon4.png" alt="" /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="modal">
+      <div class="card-content">
+        <h3 class="card-title">Duis aute irure dolor in henderit in voluptate.</h3>
+        <p class="card-text">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+        <a href="#" class="card-btn" onclick="toggleModal(event)">Exit</a>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector('body').classList.toggle('list-open');
+      }
+
+      function toggleModal(ev) {
+        ev.preventDefault();
+        document.querySelector('body').classList.toggle('modal-open');
+      }
+      function CloseAllWindows() {
+        document.querySelector('body').classList.remove('modal-open');
+        document.querySelector('body').classList.remove('list-open');
+      }
+    </script>
+  </body>
+</html>
