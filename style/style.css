@@ -5,17 +5,17 @@
 /* TYPOGRAFY */
 @font-face {
   font-family: lato-Regular;
-  src: url(/font/lato/Lato-Regular.ttf);
+  src: url(font/lato/Lato-Regular.ttf);
 }
 
 @font-face {
   font-family: lato-Bold;
-  src: url(/font/lato/Lato-Bold.ttf);
+  src: url(font/lato/Lato-Bold.ttf);
 }
 
 @font-face {
   font-family: eurofurence;
-  src: url(/font/eurofurence/eurof55.ttf);
+  src: url(font/eurofurence/eurof55.ttf);
 }
 
 /* BASIC */
